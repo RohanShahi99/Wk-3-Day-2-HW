@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylehw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Cliffs of California</title>
+    <body id="activities">
+        <header>
+            <div class="main-header">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Great Cliff's Logo">
+                </div>
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="test.html">Home</a></li>
+                        <li><a href="cliffs.html">Cliffs</a></li>
+                        <li class="active"><a href="activities.html">Activities</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="timeofday">
+            <span>Your Current Local Time: <span id="clock"></span> CT </span>
+        </section>
+        <body>
+            <table>
+                    <thead>
+                        <caption>Activities at the Cliffs</caption>
+                        <br/>
+                    <thead>
+                        <tr>
+                            <th>Activity</th>
+                            <th>West Cliff</th>
+                            <th>North Cliff</th>
+                            <th>East Cliff</th>
+                            <th>South Cliff</th>
+                        </tr>
+                 </thead>
+            <tbody>
+             <tr>
+                <td>Hiking</td>
+                <td>College Hikes</td>
+                <td>Family Fun</td>
+                <td>Treasure Trails</td>
+                <td>Canyon Explorer </td>
+             </tr>
+             <tr>
+                <td>Kayak</td>
+                <td>Western Kayak Meetup</td>
+                <td>Not Available</td>
+                <td>Youth Kayaking</td>
+                <td>Kayak Down</td>
+             </tr> 
+             <tr>
+                <td>Skydiving </td>
+                <td>Seacliff Diving</td>
+                <td>Sky is the limit</td>
+                <td>Not Available</td>
+                <td>Sky Diving for Beginners</td>
+             </tr>
+             <tr>
+                <td>Biking</td>
+                <td>Bicycle for one</td>
+                <td>Not Available</td>
+                <td>Bike Meetup Group</td>
+                <td>Not Available</td>
+             </tr>
+             <tr>
+                <td>Camping</td>
+                <td>Youth Camp</td>
+                <td>Rent a tent</td>
+                <td>Campground Adventure</td>
+                <td>Sunset Camping</td>
+             </tr>
+             </tr>
+            </tfoot>
+            </table>
+        </body>
+            <section>
+                <li class="partners">
+                    <ul>
+                     <!--<li class="partner">
+                         <img src="partners/partner-bustour.png" alt="Partner Bus Tour">
+                     </li>
+                 <li class="partner">
+                         <img src="partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+                     </li>
+                 <li class="partner">
+                         <img src="partners/partner-campingadv.png" alt="Partner Camping Adventure">
+                     </li>
+                 <li class="partner">
+                         <img src="partners/partner-collegetours.png" alt="Partner College Tours">
+                     </li>
+                 <li class="partner">
+                         <img src="partners/partner-rentalbike.png" alt="Partner Rental Bike">
+                     </li>
+                 <li class="partner">
+                         <img src="partners/partner-tourgroup.png" alt="Partner Tour Group">
+                     </li>-->
+                </ul>
+                <footer>
+                    <div class="foot">
+                    <p>&copy; 2020 Great Cliffs of California</p>
+
+                    <div class="social-icons">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+                    <p>This website is designed and created solely for educational purposes only at NewSoftUI university. All contents are not intended for any commercial gain or use.</p>
+                </footer>
+                
+             </section>
+        </header>
+        <script>
+            function currentTime() {
+                const clockElement = document.getElementById('clock');
+                const now = new Date();
+                clockElement.textContent = now.toLocaleTimeString();
+            }
+            
+            // Function to update the UTC clock
+            function updateClock() {
+                const d = new Date(); 
+                const utchr = d.getUTCHours(); 
+                const timeDiff = -8; // Change this value for different time zones
+                let adjTimeDiff = utchr + timeDiff;
+                let timeZone; 
+            
+                // Adjust time difference
+                if (adjTimeDiff >= 24) {
+                    adjTimeDiff -= 24;
+                } else if (adjTimeDiff < 0) {
+                    adjTimeDiff += 24;
+                }
+            
+                // Set the time zone label
+                if (timeDiff === -8) {
+                    timeZone = "PST (Pacific Standard Time)";
+                } else if (timeDiff === -5) {
+                    timeZone = "EST (Eastern Standard Time)";
+                } else {
+                    timeZone = "UTC";
+                }
+            
+                // Update the UTC clock dynamically (if needed)
+                const utcClock = document.getElementById('utcClock');
+                if (utcClock) {
+                    utcClock.textContent = `${adjTimeDiff}:00 ${timeZone}`;
+                }
+            }
+            
+            // Initial function calls and periodic updates
+            currentTime();
+            setInterval(currentTime, 1000);
+            updateClock();
+            </script>

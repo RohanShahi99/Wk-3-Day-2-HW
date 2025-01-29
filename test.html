@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylehw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Cliffs of California</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            width: 100%;
+            height: 400px;
+            background: url('img/cliff_ocean.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .main-header {
+            background-color: rgba(255, 255, 255, 0.8); 
+            width: 700px;
+            margin: 2em auto 0 auto;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 0 20px;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+        }
+
+        /* Navigation */
+        .main-menu ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-menu ul li {
+            position: relative;
+            padding: 0 20px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .main-menu ul li a {
+            text-decoration: none;
+            color: #888;
+            transition: color 0.3s ease;
+        }
+
+        .main-menu ul li a:hover {
+            color: #9fce3b;
+        }
+
+        .main-menu ul li.active {
+            background: #9ed034;
+            border-radius: 5px;
+        }
+
+        .main-menu ul li.active a {
+            color: #fff;
+        }
+
+        /* Active State Transition for Hover and Focus */
+        .main-menu ul li.active a:hover {
+            color: #fff;
+        }
+
+        .intro {
+          color: #8fb739;
+            padding: 20px;
+         
+            border-radius: 10px;
+        
+        }
+        .info {
+            padding: 10px;
+            border-radius: 10px;
+        }
+        section{
+            width: 100%;
+            background-color: #220af3;
+        }
+        section #partners{
+            width: 1200px;
+            padding: 2em 0 2em 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+        section #partners .partner{
+            display: inline-block;
+            margin: 0 0.75em;
+            padding: 1.3em 1.5em;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        section #partners .partner img{
+            width: 90px;
+            height: 90px;
+        }
+        footer{
+            width:100%;
+            height: 155px;
+            padding-bottom: 1em;
+            background-color: #ecfab8;
+        }
+        footer #nondisclaimer .copy{
+            padding: 3.5em 3.5em 3.5em 13em;
+            float: left;
+            font-size: 0.9em;
+        }
+        footer #nondisclaimer .disclaimer{
+            padding: 2.5em;
+            margin-right: 9.25em;
+            float: right;
+        }
+        footer #disclaimer{
+            clear: both;
+        }
+        footer #disclaimer p{
+            font-size: 0.85em;
+            text-align: center;
+        }
+       footer #nondisclaimer .social .fa{
+        padding: 15px;
+        font-size: 15px;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0 4px;
+        border-radius: 50%;
+        }
+        footer #nondisclaimer .social .fa:hover{
+            opacity: 0.7;
+        }
+        footer #nondisclaimer .social .fa-facebook{
+            background: #3B5998;
+            color: white;
+        }
+        
+        footer #nondisclaimer .social .fa-twitter{
+            background: #55ACEE;
+            color: white;
+        }   
+        footer #nondisclaimer .social .fa-instagram{
+            background: #125688;
+            color: rgb(255, 255, 255);
+        }   
+        .foot{
+            display: flex;
+            flex-direction: row;
+            gap: 1000px;
+        }
+        footer {
+    display: flex; 
+    flex-direction: column; 
+    align-items: right; 
+    padding: 20px; 
+
+}
+
+    </style>
+</head>
+<body id="home">
+    <header>
+        <div class="main-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="Great Cliff's Logo">
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="cliffs.html">Cliffs</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="timeofday">
+        <span>Your Current Local Time: <span id="clock"></span> CT </span>
+       
+    </section>
+    
+    <main>
+        <div class="intro"> 
+        
+            <h1>Introducing the Great Cliffs of California!</h1>
+        
+    </div>
+        <br>
+        <div class="info">
+        <body>
+            <h2>What is so unique about California cliffs?</h2>
+            <br>
+            <p>California cliffs are one of a kind in the United States where no cliffs are as manificent and beautiful as them. And California is the only state that have cliffs that</p>
+            <p>fronts all possible environments: sea, river, mountains and canyons. There are four such individual unique cliffs: West Cliff, North Cliff, East Cliff and South Cliff</p>
+            <P>All offer fantastic overlooking views, recreational areas, camping sites, wildlife watch spots and overnight cabins.</P>
+            <br>
+            <h3>Where are these cliffs?</h3>
+            <br>
+            <p>Located within a 100 mile radius from Irvine, California, they can be reached by roads easily. The closest cliff to Irvine is West Cliff, which is the most popular and</p>
+            <p>most visited.</p>
+        </body>
+            <section>
+                <ul id="partners">
+                     <li class="partner">
+                         <img src="partners/partner-bustour.png" alt="Partner Bus Tour">
+                     </li>
+                 <li class="partner">
+                         <img src="partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+                     </li>
+                 <li class="partner">
+                         <img src="partners/partner-campingadv.png" alt="Partner Camping Adventure">
+                     </li>
+                 <li class="partner">
+                         <img src="partners/partner-collegetours.png" alt="Partner College Tours">
+                     </li>
+                 <li class="partner">
+                         <img src="partners/partner-rentalbike.png" alt="Partner Rental Bike">
+                     </li>
+                 <li class="partner">
+                         <img src="partners/partner-tourgroup.png" alt="Partner Tour Group">
+                     </li>
+                </ul>
+                    <footer>
+                        <div class="foot">
+                        <p>&copy; 2020 Great Cliffs of California</p>
+
+                        <div class="social-icons">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                        </div>
+                    </div>
+                        <p>This website is designed and created solely for educational purposes only at NewSoftUI university. All contents are not intended for any commercial gain or use.</p>
+                    </footer>
+             </section>
+    </main>
+    <script>
+    function currentTime() {
+        var d = new Date();
+        var hr = d.getHours();
+        var min = d.getMinutes();
+        var sec = d.getSeconds();
+        var ampm;
+
+        if (sec < 10) {
+            sec = "0" + sec;
+        }
+        if (min < 10) {
+            min = "0" + min;
+        }
+
+        if (hr == 12) {
+            ampm = "PM";
+        } else if (hr > 12) {
+            hr -= 12;
+            ampm = "PM";
+        } else {
+            ampm = "AM";
+        }
+
+        var time = hr + ":" + min + ":" + sec + " " + ampm;
+
+        document.getElementById("clock").innerText = time;
+    }
+
+    // Start the clock
+    currentTime();
+    setInterval(currentTime, 1000);
+    updateClock();
+    var d = new Date(); 
+var utchr = d.getUTCHours(); 
+var timeDiff = -8;
+var adjTimeDiff; 
+var timeZone; 
+
+
+adjTimeDiff = utchr + timeDiff;
+
+if (adjTimeDiff >= 24) {
+    adjTimeDiff -= 24;
+} else if (adjTimeDiff < 0) {
+    adjTimeDiff += 24;
+}
+
+
+if (timeDiff === -8) {
+    timeZone = "PST (Pacific Standard Time)";
+} else if (timeDiff === -5) {
+    timeZone = "EST (Eastern Standard Time)";
+} else {
+    timeZone = "UTC";
+}
+</script>
+</body>
+</html>
+
+
+    
